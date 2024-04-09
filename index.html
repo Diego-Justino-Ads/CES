@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questionário</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Questionário</h2>
+  <form>
+    <div class="pergunta">
+      <div class="video-container">
+        <video controls>
+          <source src="video1.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+      </div>
+      <div class="opcoes">
+        <p>1. Qual é a capital do Brasil?</p>
+        <label>
+          <input type="radio" name="questao1" value="a" required> a) Rio de Janeiro
+        </label><br>
+        <label>
+          <input type="radio" name="questao1" value="b"> b) Brasília
+        </label><br>
+        <label>
+          <input type="radio" name="questao1" value="c"> c) São Paulo
+        </label><br>
+        <label>
+          <input type="radio" name="questao1" value="d"> d) Belo Horizonte
+        </label><br>
+      </div>
+    </div>
+
+    <div class="pergunta">
+      <div class="video-container">
+        <video controls>
+          <source src="video2.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+      </div>
+      <div class="opcoes">
+        <p>2. Qual é o maior planeta do sistema solar?</p>
+        <label>
+          <input type="radio" name="questao2" value="a" required> a) Marte
+        </label><br>
+        <label>
+          <input type="radio" name="questao2" value="b"> b) Vênus
+        </label><br>
+        <label>
+          <input type="radio" name="questao2" value="c"> c) Terra
+        </label><br>
+        <label>
+          <input type="radio" name="questao2" value="d"> d) Júpiter
+        </label><br>
+      </div>
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+</body>
+</html>
