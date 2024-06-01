@@ -1,59 +1,100 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-  }
-  
-  .form-container {
-    width: 80%;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .pergunta {
-    display: flex;
-    margin-bottom: 20px;
-  }
-  
-  .video-container {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  .opcoes {
-    flex: 2;
-  }
-  
-  input[type="radio"] {
-    margin-right: 5px;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.form-container {
+  width: 80%;
+  max-width: 800px; /* Aumentei a largura máxima para acomodar vídeos maiores */
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.pergunta {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+.video-container {
+  flex: 1;
+  margin-left: 20px;
+  order: 2;
+}
+
+video {
+  margin-left: 10px;
+  width: 100%; /* Ajusta a largura do vídeo para ocupar todo o espaço do container */
+  height: auto; /* Mantém a proporção do vídeo */
+  max-width: 400px; /* Define uma largura máxima para o vídeo */
+}
+
+.opcoes {
+  flex: 2;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Esconda todos os vídeos secundários por padrão */
+.video-container .videos video {
+  display: none;
+}
+
+/* Mostre o vídeo correspondente ao botão de rádio selecionado */
+input[name="questao1"]:checked ~ .video-container .video-a {
+  display: block;
+}
+input[name="questao1"]:checked ~ .video-container .video-b {
+  display: block;
+}
+input[name="questao1"]:checked ~ .video-container .video-c {
+  display: block;
+}
+input[name="questao1"]:checked ~ .video-container .video-d {
+  display: block;
+}
+
+/* Estilos adicionais para garantir que apenas o vídeo correto seja mostrado */
+#questao1a:checked ~ .video-container .video-a {
+  display: block;
+}
+#questao1b:checked ~ .video-container .video-b {
+  display: block;
+}
+#questao1c:checked ~ .video-container .video-c {
+  display: block;
+}
+#questao1d:checked ~ .video-container .video-d {
+  display: block;
+}
