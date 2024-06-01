@@ -9,59 +9,62 @@
 <body>
 
 <div class="form-container">
-  <h2>Questionário</h2>
   <form>
     <div class="pergunta">
-      <div class="video-container">
-        <video controls>
-          <source src="video1.mp4" type="video/mp4">
-          Seu navegador não suporta vídeo.
+      <p>1. Você conhece o livro "O Camelo, o Burro e a Água?</p>
+      <video controls>
+        <source src="video/questao1.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+      <hr>
+    </div>
+    <hr>
+    <div class="opcoes">
+      <input type="radio" name="questao1" id="questao1a" value="a" required>
+      <label for="questao1a" onclick="showVideo('video1a')">a) Sim</label><br>
+
+      <input type="radio" name="questao1" id="questao1b" value="b">
+      <label for="questao1b" onclick="showVideo('video1b')">b) Não</label><br>
+
+      <input type="radio" name="questao1" id="questao1c" value="c">
+      <label for="questao1c" onclick="showVideo('video1c')">c) Mais ou menos</label><br>
+    </div>
+    <div class="video-container">
+      <video id="video1" controls autoplay>
+        <source id="video1-source" src="video/sim.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+      <div class="videos">
+        <video class="video-a" controls>
+          <source src="video/sim.mp4" type="video/mp4">
         </video>
-      </div>
-      <div class="opcoes">
-        <p>1. Qual é a capital do Brasil?</p>
-        <label>
-          <input type="radio" name="questao1" value="a" required> a) Rio de Janeiro
-        </label><br>
-        <label>
-          <input type="radio" name="questao1" value="b"> b) Brasília
-        </label><br>
-        <label>
-          <input type="radio" name="questao1" value="c"> c) São Paulo
-        </label><br>
-        <label>
-          <input type="radio" name="questao1" value="d"> d) Belo Horizonte
-        </label><br>
+        <video class="video-b" controls>
+          <source src="video/nao.mp4" type="video/mp4">
+        </video>
+        <video class="video-c" controls>
+          <source src="video/maisoumenos.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
-    <div class="pergunta">
-      <div class="video-container">
-        <video controls>
-          <source src="video2.mp4" type="video/mp4">
-          Seu navegador não suporta vídeo.
-        </video>
-      </div>
-      <div class="opcoes">
-        <p>2. Qual é o maior planeta do sistema solar?</p>
-        <label>
-          <input type="radio" name="questao2" value="a" required> a) Marte
-        </label><br>
-        <label>
-          <input type="radio" name="questao2" value="b"> b) Vênus
-        </label><br>
-        <label>
-          <input type="radio" name="questao2" value="c"> c) Terra
-        </label><br>
-        <label>
-          <input type="radio" name="questao2" value="d"> d) Júpiter
-        </label><br>
-      </div>
-    </div>
-
-    <button type="submit">Enviar</button>
   </form>
 </div>
+
+<button type="submit">Enviar</button>
+
+<script>
+  function showVideo(videoId) {
+    var video = document.getElementById('video1');
+    var source = document.getElementById('video1-source');
+    var videoFiles = {
+      'video1a': 'video/sim.mp4',
+      'video1b': 'video/nao.mp4',
+      'video1c': 'video/maisoumenos.mp4'
+    };
+    source.src = videoFiles[videoId];
+    video.load();
+  }
+</script>
 
 </body>
 </html>
