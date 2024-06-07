@@ -12,63 +12,13 @@
   <img src="img/logotipo.jpg">
 </div>
 
-<div class="form-container">
-  <form>
-    <div class="pergunta">
-      <p>1. Você conhece o livro "O Camelo, o Burro e a Água?</p>
-      <video controls>
-        <source src="video/questao1.mp4" type="video/mp4">
-        Seu navegador não suporta vídeo.
-      </video>
-      <hr>
-    </div>
+<div class="container">
+    <h2>Bem-vindo</h2>
+    <label class="nomePrimeiro" for="nomePrimeiro-text">Seu nome primeiro:</label><br>
+    <input type="text" id="nomePrimeiro-text" name="nomePrimeiro-text" placeholder="Digite aqui"><br>
     <hr>
-    <div class="opcoes">
-      <input type="radio" name="questao1" id="questao1a" value="a" required>
-      <label for="questao1a" onclick="showVideo('video1a')">a) Sim</label><br>
-
-      <input type="radio" name="questao1" id="questao1b" value="b">
-      <label for="questao1b" onclick="showVideo('video1b')">b) Não</label><br>
-
-      <input type="radio" name="questao1" id="questao1c" value="c">
-      <label for="questao1c" onclick="showVideo('video1c')">c) Mais ou menos</label><br>
-    </div>
-    <div class="video-container">
-      <video id="video1" controls autoplay>
-        <source id="video1-source" src="video/sim.mp4" type="video/mp4">
-        Seu navegador não suporta vídeo.
-      </video>
-      <div class="videos">
-        <video class="video-a" controls>
-          <source src="video/sim.mp4" type="video/mp4">
-        </video>
-        <video class="video-b" controls>
-          <source src="video/nao.mp4" type="video/mp4">
-        </video>
-        <video class="video-c" controls>
-          <source src="video/maisoumenos.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-
-  </form>
+    Teste
+    <a href="questionario.html">
+        <button>Avançar</button>
+    </a>
 </div>
-
-<button type="submit">Enviar</button>
-
-<script>
-  function showVideo(videoId) {
-    var video = document.getElementById('video1');
-    var source = document.getElementById('video1-source');
-    var videoFiles = {
-      'video1a': 'video/sim.mp4',
-      'video1b': 'video/nao.mp4',
-      'video1c': 'video/maisoumenos.mp4'
-    };
-    source.src = videoFiles[videoId];
-    video.load();
-  }
-</script>
-
-</body>
-</html>
