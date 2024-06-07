@@ -17,10 +17,81 @@ body {
   z-index: 1;
 }
 
-.form-container {
+.container {
+  text-align: center;
   width: 80%;
   max-width: 800px; /* Aumentei a largura máxima para acomodar vídeos maiores */
   margin: 120px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  width: 100%; /* Faz o campo de texto ocupar 100% da largura do seu container */
+  max-width: 300px; /* Define uma largura máxima */
+  height: 40px; /* Define a altura do campo de texto */
+  padding: 10px; /* Adiciona padding interno */
+  font-size: 16px; /* Define o tamanho da fonte */
+  border: 1px solid #ccc; /* Define a borda */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+  box-sizing: border-box; /* Inclui a borda e o padding na largura total */
+  text-align: center;
+  border: solid 1px black; 
+}
+
+/* Estilos adicionais para o campo de texto ao focar */
+input[type="text"]:focus {
+  border-color: #007bff; /* Altera a cor da borda ao focar */
+  outline: none; /* Remove o contorno padrão do navegador */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adiciona uma sombra ao focar */
+}
+
+.form-container1 {
+  width: 80%;
+  max-width: 800px; /* Aumentei a largura máxima para acomodar vídeos maiores */
+  margin: 120px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container2 {
+  width: 80%;
+  max-width: 800px; /* Aumentei a largura máxima para acomodar vídeos maiores */
+  margin: -90px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container3 {
+  width: 80%;
+  max-width: 800px; /* Aumentei a largura máxima para acomodar vídeos maiores */
+  margin: 120px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container4 {
+  width: 80%;
+  max-width: 800px; /* Aumentei a largura máxima para acomodar vídeos maiores */
+  margin: -90px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container5 {
+  width: 80%;
+  max-width: 800px; /* Aumentei a largura máxima para acomodar vídeos maiores */
+  margin: 130px auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -44,9 +115,7 @@ form {
 }
 
 .video-container {
-  flex: 1;
-  margin-left: 20px;
-  order: 2;
+  max-width: 400px;
 }
 
 video {
@@ -57,7 +126,9 @@ video {
 }
 
 .opcoes {
-  flex: 2;
+  width: 350px;
+  padding: top 20px;
+
 }
 
 input[type="radio"] {
@@ -65,13 +136,17 @@ input[type="radio"] {
 }
 
 button {
-  width: 100%;
+  width: 30%;
   padding: 10px;
   background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.submit {
+  margin-left: 32%;
 }
 
 button:hover {
@@ -93,7 +168,56 @@ input[name="questao1"]:checked ~ .video-container .video-b {
 input[name="questao1"]:checked ~ .video-container .video-c {
   display: block;
 }
-input[name="questao1"]:checked ~ .video-container .video-d {
+
+input[name="questao2"]:checked ~ .video-container .video-a {
+  display: block;
+}
+input[name="questao2"]:checked ~ .video-container .video-b {
+  display: block;
+}
+input[name="questao2"]:checked ~ .video-container .video-c {
+  display: block;
+}
+input[name="questao2"]:checked ~ .video-container .video-d {
+  display: block;
+}
+
+input[name="questao3"]:checked ~ .video-container .video-a {
+  display: block;
+}
+input[name="questao3"]:checked ~ .video-container .video-b {
+  display: block;
+}
+input[name="questao3"]:checked ~ .video-container .video-c {
+  display: block;
+}
+input[name="questao3"]:checked ~ .video-container .video-d {
+  display: block;
+}
+
+input[name="questao4"]:checked ~ .video-container .video-a {
+  display: block;
+}
+input[name="questao4"]:checked ~ .video-container .video-b {
+  display: block;
+}
+input[name="questao4"]:checked ~ .video-container .video-c {
+  display: block;
+}
+input[name="questao4"]:checked ~ .video-container .video-d {
+  display: block;
+}
+
+input[name="questao5"]:checked ~ .video-container .video-a {
+  display: block;
+}
+input[name="questao5"]:checked ~ .video-container .video-b {
+  display: block;
+}
+input[name="questao5"]:checked ~ .video-container .video-c {
+  display: block;
+}
+input[name="questao5"]:checked ~ .video-container .video-d {
   display: block;
 }
 
@@ -107,6 +231,55 @@ input[name="questao1"]:checked ~ .video-container .video-d {
 #questao1c:checked ~ .video-container .video-c {
   display: block;
 }
-#questao1d:checked ~ .video-container .video-d {
+
+#questao2a:checked ~ .video-container .video-a {
+  display: block;
+}
+#questao2b:checked ~ .video-container .video-b {
+  display: block;
+}
+#questao2c:checked ~ .video-container .video-c {
+  display: block;
+}
+#questao2d:checked ~ .video-container .video-d {
+  display: block;
+}
+
+#questao3a:checked ~ .video-container .video-a {
+  display: block;
+}
+#questao3b:checked ~ .video-container .video-b {
+  display: block;
+}
+#questao3c:checked ~ .video-container .video-c {
+  display: block;
+}
+#questao3d:checked ~ .video-container .video-d {
+  display: block;
+}
+
+#questao4a:checked ~ .video-container .video-a {
+  display: block;
+}
+#questao4b:checked ~ .video-container .video-b {
+  display: block;
+}
+#questao4c:checked ~ .video-container .video-c {
+  display: block;
+}
+#questao4d:checked ~ .video-container .video-d {
+  display: block;
+}
+
+#questao5a:checked ~ .video-container .video-a {
+  display: block;
+}
+#questao5b:checked ~ .video-container .video-b {
+  display: block;
+}
+#questao5c:checked ~ .video-container .video-c {
+  display: block;
+}
+#questao5d:checked ~ .video-container .video-d {
   display: block;
 }
