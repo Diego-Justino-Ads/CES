@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questionário</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bloco">
+  <img src="img/logotipo.jpg">
+</div>
+
+<!--1º Questão-->
+<div class="form-container1">
+  <form>
+    <div class="pergunta">
+      <p>1. Você conhece o livro "O Camelo, o Burro e a Água?</p>
+      <video controls>
+        <source src="video/questao1.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+      <hr>
+    </div>
+    <hr>
+    <div class="opcoes">
+      <input type="radio" name="questao1" id="questao1a" value="a" required>
+      <label for="questao1a" onclick="showVideo1('video1a')">a) Sim</label><br>
+
+      <input type="radio" name="questao1" id="questao1b" value="b">
+      <label for="questao1b" onclick="showVideo1('video1b')">b) Não</label><br>
+
+      <input type="radio" name="questao1" id="questao1c" value="c">
+      <label for="questao1c" onclick="showVideo1('video1c')">c) Mais ou menos</label><br>
+    </div>
+    <div class="video-container">
+      <video id="video1" controls autoplay>
+        <source id="video1-source" src="video/sim.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+      <div class="videos">
+        <video class="video-a" controls>
+          <source src="video/sim.mp4" type="video/mp4">
+        </video>
+        <video class="video-b" controls>
+          <source src="video/nao.mp4" type="video/mp4">
+        </video>
+        <video class="video-c" controls>
+          <source src="video/maisoumenos.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+  </form>
+</div>
+
+<!--2º Questão-->
+<div class="form-container2">
+  <form>
+    <div class="pergunta">
+      <p>2. Quantos litros têm a caixa d'água padrão de uma casa?</p>
+      <video controls>
+        <source src="video/questao2.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+      <hr>
+    </div>
+    <hr>
+    <div class="opcoes">
+      <input type="radio" name="questao2" id="questao2a" value="a" required>
+      <label for="questao2a" onclick="showVideo2('video2a')">a) 6.500 litros</label><br>
+
+      <input type="radio" name="questao2" id="questao2b" value="b">
+      <label for="questao2b" onclick="showVideo2('video2b')">b) 1.000 litros</label><br>
+
+      <input type="radio" name="questao2" id="questao2c" value="c">
+      <label for="questao2c" onclick="showVideo2('video2c')">c) 750 litros</label><br>
+
+      <input type="radio" name="questao2" id="questao2d" value="d">
+      <label for="questao2d" onclick="showVideo2('video2d')">c) 15.000 litros</label><br>
+    </div>
+    <div class="video-container">
+      <video id="video2" controls autoplay>
+        <source id="video2-source" src="video/6500litros.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+      <div class="videos">
+        <video class="video-a" controls>
+          <source src="video/6500litros.mp4" type="video/mp4">
+        </video>
+        <video class="video-b" controls>
+          <source src="video/1000litros.mp4" type="video/mp4">
+        </video>
+        <video class="video-c" controls>
+          <source src="video/750litros.mp4" type="video/mp4">
+        </video>
+        <video class="video-d" controls>
+          <source src="video/15000litros.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+  </form>
+</div>
+
+<!--3º Questão-->
+<div class="form-container3">
+  <form>
+    <div class="pergunta">
+      <p>3. Quantos litros de água são desperdiçados por dia?</p>
+      <video controls>
+        <source src="video/questao3.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+      <hr>
+    </div>
+    <hr>
+    <div class="opcoes">
+      <input type="radio" name="questao3" id="questao3a" value="a" required>
+      <label for="questao3a" onclick="showVideo3('video3a')">a) 110 litros</label><br>
+
+      <input type="radio" name="questao3" id="questao3b" value="b">
+      <label for="questao3b" onclick="showVideo3('video3b')">b) 20 litros</label><br>
+
+      <input type="radio" name="questao3" id="questao3c" value="c">
+      <label for="questao3c" onclick="showVideo3('video3c')">c) 500 litros</label><br>
+
+      <input type="radio" name="questao3" id="questao3d" value="d">
+      <label for="questao3d" onclick="showVideo3('video3d')">c) 1 litro</label><br>
+    </div>
+    <div class="video-container">
+      <video id="video3" controls autoplay>
+        <source id="video3-source" src="video/110litros.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+      <div class="videos">
+        <video class="video-a" controls>
+          <source src="video/110litros.mp4" type="video/mp4">
+        </video>
+        <video class="video-b" controls>
+          <source src="video/20litros.mp4" type="video/mp4">
+        </video>
+        <video class="video-c" controls>
+          <source src="video/500litros.mp4" type="video/mp4">
+        </video>
+        <video class="video-d" controls>
+          <source src="video/1litro.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!--4º Questão-->
+<div class="form-container4">
+  <form>
+    <div class="pergunta">
+      <p>4. Quantas vezes por dia devemos escovar os dentes?</p>
+      <video controls>
+        <source src="video/questao4.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+      <hr>
+    </div>
+    <hr>
+    <div class="opcoes">
+      <input type="radio" name="questao4" id="questao4a" value="a" required>
+      <label for="questao4a" onclick="showVideo4('video4a')">a) Três vezes ao dia</label><br>
+
+      <input type="radio" name="questao4" id="questao4b" value="b">
+      <label for="questao4b" onclick="showVideo4('video4b')">b) Duas vezes ao dia</label><br>
+
+      <input type="radio" name="questao4" id="questao4c" value="c">
+      <label for="questao4c" onclick="showVideo4('video4c')">c) Uma vez ao dia</label><br>
+
+      <input type="radio" name="questao4" id="questao4d" value="d">
+      <label for="questao4d" onclick="showVideo4('video4d')">c) cinco vezes ao dia</label><br>
+    </div>
+    <div class="video-container">
+      <video id="video4" controls autoplay>
+        <source id="video4-source" src="video/Trêsvezespordia.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+      <div class="videos">
+        <video class="video-a" controls>
+          <source src="video/Trêsvezespordia.mp4" type="video/mp4">
+        </video>
+        <video class="video-b" controls>
+          <source src="video/Doisvezespordia.mp4" type="video/mp4">
+        </video>
+        <video class="video-c" controls>
+          <source src="video/umvezpordia.mp4" type="video/mp4">
+        </video>
+        <video class="video-d" controls>
+          <source src="video/Cincovezespordia.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+  </form>
+</div>
+
+<!--4º Questão-->
+<div class="form-container5">
+  <form>
+    <div class="pergunta">
+      <p>5. Quanto gasta uma torneira pingando uma gota a cada 5 segundos durante 24 horas?</p>
+      <video controls>
+        <source src="video/questao5.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+      <hr>
+    </div>
+    <hr>
+    <div class="opcoes">
+      <input type="radio" name="questao5" id="questao5a" value="a" required>
+      <label for="questao5a" onclick="showVideo5('video5a')">a) Mais de 20 litros de água desperdiçados.</label><br>
+
+      <input type="radio" name="questao5" id="questao5b" value="b">
+      <label for="questao5b" onclick="showVideo5('video5b')">b) Mais de 100 litros de água desperdiçados.</label><br>
+
+      <input type="radio" name="questao5" id="questao5c" value="c">
+      <label for="questao5c" onclick="showVideo5('video5c')">c) Mais de 5 litros de água desperdiçados.</label><br>
+    </div>
+    <div class="video-container">
+      <video id="video5" controls autoplay>
+        <source id="video5-source" src="video/Maisde20litros.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+      <div class="videos">
+        <video class="video-a" controls>
+          <source src="video/Maisde20litros.mp4" type="video/mp4">
+        </video>
+        <video class="video-b" controls>
+          <source src="video/Maisde100litros.mp4" type="video/mp4">
+        </video>
+        <video class="video-c" controls>
+          <source src="video/Maisde5litros.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+  </form>
+</div>
+
+<button class="submit" type="submit">Enviar</button>
+
+<script>
+  function showVideo1(videoId) {
+    var video = document.getElementById('video1');
+    var source = document.getElementById('video1-source');
+    var videoFiles = {
+      'video1a': 'video/sim.mp4',
+      'video1b': 'video/nao.mp4',
+      'video1c': 'video/maisoumenos.mp4'
+    };
+    source.src = videoFiles[videoId];
+    video.load();
+  }
+
+  function showVideo2(videoId) {
+    var video = document.getElementById('video2');
+    var source = document.getElementById('video2-source');
+    var videoFiles = {
+      'video2a': 'video/6500litros.mp4',
+      'video2b': 'video/1000litros.mp4',
+      'video2c': 'video/750litros.mp4',
+      'video2d': 'video/15000litros.mp4'
+    };
+    source.src = videoFiles[videoId];
+    video.load();
+  }
+
+  function showVideo3(videoId) {
+    var video = document.getElementById('video3');
+    var source = document.getElementById('video3-source');
+    var videoFiles = {
+      'video3a': 'video/110litros.mp4',
+      'video3b': 'video/20litros.mp4',
+      'video3c': 'video/500litros.mp4',
+      'video3d': 'video/1litro.mp4'
+    };
+    source.src = videoFiles[videoId];
+    video.load();
+  }
+
+  function showVideo4(videoId) {
+    var video = document.getElementById('video4');
+    var source = document.getElementById('video4-source');
+    var videoFiles = {
+      'video4a': 'video/Trêsvezespordia.mp4',
+      'video4b': 'video/Doisvezespordia.mp4',
+      'video4c': 'video/umvezpordia.mp4',
+      'video4d': 'video/Cincovezespordia.mp4'
+    };
+    source.src = videoFiles[videoId];
+    video.load();
+  }
+
+  function showVideo5(videoId) {
+    var video = document.getElementById('video5');
+    var source = document.getElementById('video5-source');
+    var videoFiles = {
+      'video5a': 'video/Maisde20litros.mp4',
+      'video5b': 'video/Maisde100litros.mp4',
+      'video5c': 'video/Maisde5litros.mp4'
+    };
+    source.src = videoFiles[videoId];
+    video.load();
+  }
+</script>
+
+</body>
+</html>
